@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'BPG Glaho Arial V5 Big';
+    src: local('BPG Glaho Arial V5 Big'), local('BPGGlahoArialV5Big'),
+        url('hinted-BPGGlahoArialV5Big.woff2') format('woff2'),
+        url('hinted-BPGGlahoArialV5Big.woff') format('woff'),
+        url('hinted-BPGGlahoArialV5Big.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

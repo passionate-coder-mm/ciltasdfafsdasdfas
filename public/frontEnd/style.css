@@ -1,0 +1,3402 @@
+/*------------------------
+Theme Name: CILT
+Theme URI: http://cilt.org.bd/
+Author:Weaver Innovations Ltd
+Author URI: weaverbd.com
+Description: Corporate Website, Company website, business website
+Version: 2.0.0
+Date:15/03/2018
+---------------------------*/
+
+/*
+Index of All CSS
+-------------------------------
+
+1.0 Preloader
+1.1 Base Css
+2. header area style
+    2.1 Header top
+    2.2 Header Mid
+3. Slider css
+4. Product Tab Area
+5. Footer Area
+6. Know Us Page
+------------------------------------*/
+
+/* ---------------------------------------------------------
+1.1 Base CSS
+------------------------------------------------------------*/
+html,
+body {
+    height: 100%;
+    font-family: 'BPG Glaho Arial V5 Big';
+    font-weight: normal;
+    font-style: normal;
+    /*font-weight: 400;*/
+    font-size: 14px;
+    line-height: 21px;
+    position: relative;
+    background-color: #fff;
+    font-family: arial;
+}
+figure {
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.fix {
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 700;
+    font-family: 'BPG Glaho Arial V5 Big';
+    /*font-weight: normal;*/
+    /*font-style: normal;*/
+    font-family:arial;
+}
+.section-padding {
+    padding: 130px 0;
+}
+
+p {
+    margin: 0;
+    font-family:arial;
+}
+
+a {
+    color: #111111;
+    font-family:arial;
+}
+
+a:focus {
+    outline: 0 solid;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+a, .testi_prev, .testi_next, header .main-menu-area .navbar.navbar-inverse,
+.main-menu .navbar-inverse .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover,.main-menu-area nav.navbar.navbar-inverse.affix-top .navbar-brand > img,.main-menu-area nav.navbar.navbar-inverse.affix .navbar-brand > img, .single-partner, .single-partner:hover, .single-ww-do:hover, .contact-form-area input.cilt-button[type="submit"], .home-single-every-block h4, .home-single-every-block img, .home-single-every-block:hover img, .home-single-strength, .home-single-strength img , .home-single-strength:hover img , #toTop.btn-info, .course-box{
+    transition: .5s;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.section-padding {
+    padding: 100px 0;
+}
+.testi_prev, .testi_next {
+    /*background-color: rgba(54, 17, 99, 0.20);*/
+    color: rgba(178, 142, 94, 0.4);
+    cursor: pointer;
+    font-size: 58px;
+    height: 39px;
+    line-height: 37px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 40px;
+    z-index: 99;
+}
+.testi_prev {
+    right: 60px;
+}
+.testi_next {
+    right: 20px;
+}
+.owl-dots {
+    display: none;
+    position: absolute;
+    text-align: center;
+    bottom: 60px;
+    width: 100%;
+}
+.owl-dot {
+    background-color: transparent;
+    border: 4px solid rgba(255, 255, 255, 0.21);
+    border-radius: 50%;
+    display: inline-block;
+    height: 20px;
+    margin: 0 4px;
+    width: 20px;
+}
+.owl-dot.active, .testi_prev:hover, .testi_next:hover {
+    /*background-color: rgba(54, 17, 99, 0.53);*/
+    color: #b28e5e;
+}
+p {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 14px;
+}
+p.colorWhite {
+    color: #ffffff;
+}
+.padding-zero {
+    padding-left: 0;
+    padding-right: 0;
+}
+.z-indexing{
+    position: relative;
+    z-index: 99;
+}
+h1,h2,h3,h4,h5{
+    text-transform: uppercase;
+    font-weight:bold;
+    font-family:arial;
+}
+h2.section-title {
+    /*border-bottom: 1px solid #361063;*/
+    color: #361063;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 4%;
+    padding: 0 0 2%;
+    text-align: center;
+    font-family:arial;
+}
+.padding-bottom{
+    padding-bottom:40px;
+}
+.purple-color{
+    color: #361163;
+}
+a.cilt-button.golden-button{
+    background-color: #b28e5e;
+    border-color: #b28e5e;
+    color: #fff;
+}
+a.cilt-button.golden-button:hover{
+    box-shadow: 1px 8px 7px rgba(178, 142, 94, 0.86);
+    color: #361163;
+    background-color: #b28e5e;
+}
+/* ----------------------------------------
+2.  header area style Start
+------------------------------------------ */
+/*-------header top area Start-------*/
+.header-top-area {
+    border-bottom:1px solid rgba(255, 255, 255, 0.3);
+    background-color: #361063;
+}
+.top-header-country-list ul > li > a {
+    line-height: 39px;
+}
+.top-header-country-list ul > li:hover > a {
+    color: #fff;
+}
+.top-header-country-list ul > li > .sub-menu li > a {
+    /*background-color: #fff;*/
+    /*color: #361063;*/
+    /*display: block;*/
+    /*font-size: 13px;*/
+    /*font-weight: 400;*/
+    line-height: 21px;
+    /*padding: 9px 0;*/
+    /*text-transform: capitalize;*/
+}
+.top-header-country-list img {
+    height: 12px;
+    padding: 0 4px;
+}
+.top-right-menu {
+     float: right;
+ }
+.top-right-menu ul li a {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 10px 12px;
+    font-size:13px;
+}
+.top-right-menu ul li.active a{
+    background-color: #eee;
+    color: #bb9459;
+}
+.top-header-country-list ul > li > .sub-menu li > a:hover, .top-right-menu ul li a:hover, .top-header-country-list a {
+    color: #bb9459;
+}
+.top-right-menu ul li:last-child a, .top-right-menu ul li:nth-child(2) a {
+    /*background-color: #eee;*/
+    color: #bb9459;
+}
+.top-right-menu ul li:last-child a:hover, .top-right-menu ul li:nth-child(2) a:hover {
+    color: #361163;
+}
+/*.top-header-contact nav ul li a i {*/
+    /*padding-right: 8px;*/
+/*}*/
+/*Header Top Search form*/
+.top-right-menu form {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    line-height: 38px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.top-right-menu .btn.btn-default {
+    background-color: transparent;
+    border: 0 none;
+    color: #fff;
+    height: 40px;
+    padding: 7px 17px;
+}
+.top-right-menu input[type="text"] {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    /*font-weight: 100;*/
+    height: 41px;
+    outline: medium none;
+    padding: 0 46px 0 4px;
+    position: absolute;
+    right: 0;
+    top: -6px;
+    transition: width 0.4s cubic-bezier(0, 0.795, 0, 1) 0s;
+    width: 0;
+    z-index: 3;
+}
+.top-right-menu input[type="text"]:focus:hover {
+    /*border-bottom: 1px solid #BBB;*/
+}
+.top-right-menu input[type="text"]:focus {
+    background-color: #361163;
+    border: 1px solid #b28e5e;
+    cursor: text;
+    padding-left: 12px;
+    width: 407px;
+    z-index: 1;
+}
+.top-right-menu input[type="submit"] {
+    height: 67px;
+    width: 63px;
+    display: inline-block;
+    /*color:red;*/
+    float: right;
+    /*background-color: gold;*/
+    text-indent: -10000px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: opacity .4s ease;
+}
+
+.top-right-menu input[type="submit"]:hover {
+    opacity: 0.8;
+}
+/*-------header top area End-------*/
+header.header_section {
+    position: relative;
+}
+header .main-menu-area .navbar.navbar-inverse {
+    border-bottom: 1px solid #bb9459;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.4);
+    top: 0;
+    z-index: 999;
+}
+header .main-menu-area .navbar.navbar-inverse.affix {
+    border-bottom: 1px solid #bb9459;
+}
+.main-menu-area nav {
+    background-color: #361063;
+    border-image: none;
+    border-radius: 0;
+    border-style: none;
+    border-width: 0;
+    margin: 0;
+    width: 100%;
+}
+.main-menu-area .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+}
+.main-menu-area .navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    font-size: 14px;
+    line-height: 38px;
+    padding: 26px 15px;
+    text-transform: uppercase;
+}
+.main-menu-area .navbar-inverse.affix .navbar-nav > li > a {
+    padding: 16px 15px;
+}
+.main-menu-area ul.navbar-right > li:hover, .main-menu-area ul.navbar-right > li.active {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+.main-menu-area nav.navbar.navbar-inverse.affix-top .navbar-brand > img {
+    height: 72px;
+}
+.main-menu-area nav.navbar.navbar-inverse.affix .navbar-brand > img {
+    height: 59px;
+}
+.nav.navbar-nav.navbar-right span > img {
+    height: 9px;
+}
+.main-menu-area .navbar-inverse .navbar-nav > li > a:hover, .main-menu-area .navbar-inverse .navbar-nav > .active > a,
+.main-menu-area .navbar-inverse .navbar-nav > .active > a:focus, .main-menu-area .navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: transparent;
+    color: #bb9459;
+}
+.main-menu-area .navbar-inverse .navbar-brand {
+    left: -8px;
+    margin: auto;
+    padding: 8px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: auto;
+}
+.main-menu-area .navbar-inverse.affix .navbar-brand {
+    top: -2px;
+}
+header .main-menu-area .navbar-brand > img {
+    display: inline-block;
+}
+.main-menu-area .sub-menu ,.top-header-country-list .sub-menu{
+    background-color: #fff;
+    border: 1px solid #bb9459;
+    left: 0;
+    line-height: 10px;
+    list-style: outside none none;
+    opacity: 0;
+    padding: 3px 0 10px;
+    position: absolute;
+    text-align: center;
+    top: 99%;
+    transform: scaleY(0);
+    transform-origin: center top 0;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 200px;
+    z-index: -99;
+}
+.main-menu-area .sub-menu{
+    background-color: #5b308e;
+    border-top: 0;
+    padding: 0 0 3px;
+    border-bottom: 0;
+    border-left: 1px solid #bb9459;
+    border-right: 1px solid #bb9459;
+}
+.top-header-country-list .sub-menu {
+    width: 1200px;
+}
+.main-menu-area nav.navbar-inverse.affix .sub-menu {
+    top: 100%;
+}
+.main-menu-area ul li:nth-child(2) .sub-menu {
+    /*left: -402px;*/
+}
+.main-menu-area ul.navbar-left .sub-menu {
+    left: 5px;
+}
+.main-menu-area > nav ul li:hover .sub-menu, .top-header-country-list > nav ul li:hover .sub-menu{
+    opacity: 1;
+    transform: scaleY(1);
+    z-index: 9999999;
+}
+.sub-menu1 > li {
+    padding: 0 0;
+    text-align: left;
+    border-bottom: 1px solid #bb9459;
+}
+.sub-menu1 > li:hover {
+    /*padding-left: 20px;*/
+}
+.main-menu-area ul > li.sub-menu:hover {
+    background-image: none;
+}
+.sub-menu1 > li > a {
+    background-color: #fff;
+    color: #361063;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 9px 0 9px 7px;
+    text-transform: capitalize;
+}
+.sub-menu1 > li > a:hover, .sub-menu1 > li.active > a {
+    color: #bb9459;
+}
+.sub-menu1 li a i {
+    padding-right: 5px;
+}
+.under-menu > h5 {
+    background-color: #361163;
+    padding: 15px 0 15px 12px;
+    text-align: left;
+    border-bottom: 1px solid #bb9459;
+}
+.under-menu > h5 a {
+    color: #fff;
+    text-transform: capitalize;
+    padding: 3px 0;
+}
+/*-------Search Style Start-------*/
+.main-menu-area form.navbar-form.navbar-right {
+    margin: 0;
+    position: relative;
+    top: 24px;
+}
+.main-menu-area .navbar-inverse.affix form.navbar-form.navbar-right {
+    top: 15px;
+}
+.main-menu-area form.navbar-form.navbar-right input.form-control {
+    border: none;
+}
+.main-menu-area form.navbar-form.navbar-right .btn.btn-default {
+    border: none;
+}
+.main-menu-area form.navbar-form.navbar-right .input-group {
+    border: 1px solid #c1c1c1;
+}
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle,
+.input-group-btn:last-child > .btn-group:not(:last-child) > .btn, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+    box-shadow: none;
+}
+.form-control:focus {
+    border-color: #ccc;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+    outline: 0 none;
+}
+.form-control {
+    border-radius: 0;
+    box-shadow: none;
+}
+.btn-default {
+    background-color: #fff;
+    border-color: #ccc;
+    color: #50c6ef;
+    border-radius: 0;
+    border-left: 0;
+}
+.navbar.navbar-inverse.affix .for-search {
+    top: 49px;
+}
+.for-search form .form-control, .for-search_2 form .form-control {
+    border: 1px solid #ebebeb;
+    height: 50px;
+    width: 86%;
+    border-radius: 0;
+}
+.for-search form .form-control:focus, .for-search_2 form .form-control:focus {
+    box-shadow: none;
+    border: 1px solid #ebebeb;
+}
+/*========== Mobile Navbar Button Style ===========*/
+.main-menu-area .navbar-inverse .navbar-toggle {
+    border-color: transparent;
+}
+.main-menu-area .navbar-inverse .navbar-toggle:focus, .main-menu-area .navbar-inverse .navbar-toggle:hover {
+    background-color: transparent;
+}
+/*============Mobile Menu Start===========*/
+.icon-bar {
+    transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    opacity: 1;
+    visibility: visible;
+}
+.cross .icon-bar:nth-child(3) {
+    opacity: 0;
+    visibility: hidden;
+}
+.cross .icon-bar:nth-child(2) {
+    transform: rotate(45deg) translate(5px, 4px);
+    -moz-transform: rotate(45deg) translate(5px, 4px);
+    -webkit-transform: rotate(45deg) translate(5px, 4px);
+}
+.cross .icon-bar:nth-child(4) {
+    transform: rotate(-45deg) translate(4px, -4px);
+    -moz-transform: rotate(-45deg) translate(4px, -4px);
+    -webkit-transform: rotate(-45deg) translate(4px, -4px);
+}
+/*======= Main Menu Area Style End =======*/
+
+/* ----------------------------------------
+2.  header area style End
+------------------------------------------ */
+
+/* ---------------------------------------------------------
+3. Slider css
+------------------------------------------------------------*/
+.slider_wrapper {
+    position: relative;
+}
+.slider_area .item > img {
+    max-height: calc(100vh - 120px);
+    width: 100%;
+}
+.item .caption_left {
+    text-align: right;
+    width: 84%;
+}
+.caption {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 41%;
+    left: 6.3%;
+    position: absolute;
+    top: 41%;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+.caption a.care_bt {
+    background-color: transparent;
+    border-color: #2986e2;
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    color: #333;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    width: 120px;
+}
+.caption a.care_bt:hover {
+    background-color: #f25d30;
+    color: #fff;
+    border-color: #f25d30;
+}
+.caption_left p {
+    text-align: right;
+}
+.caption h1 {
+    /*color: rgba(54,17,99,.65);*/
+    color: #fff;
+    display: inline-block;
+    font-size: 31px;
+    /*font-size: 48px;*/
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+.caption h2 {
+    /*color: rgba(178,142,94,.71);*/
+    color: #fff;
+    /*font-size: 31px;*/
+    font-size: 16px;
+    margin-bottom: 30px;
+    /*font-weight: bold;*/
+    text-transform: capitalize;
+    line-height:21px;
+}
+.slider_area a.slide-button, .about-button, .service-button {
+    background-color: rgba(0, 0, 0, 0.74);
+    border: 2px solid rgba(0, 0, 0, 0.74);
+    border-radius: 24px;
+    color: #fff;
+    font-weight: bold;
+    padding: 11px 30px;
+    text-transform: capitalize;
+}
+.slider_area a.slide-button:hover, .about-button:hover, .service-button:hover {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 1);
+}
+.caption h1 span {
+    color: #2986e2;
+}
+.caption p {
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+}
+.mainslider_nav {
+    position: absolute;
+    top: calc(50% - 46.5px);
+    width: 100%;
+}
+.mainslider_nav .testi_prev {
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.mainslider_nav .testi_next {
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.slider_wrapper:hover .mainslider_nav .testi_prev {
+    left: 4%;
+    visibility: visible;
+    opacity: 1;
+}
+.slider_wrapper:hover .mainslider_nav .testi_next {
+    right: 4%;
+    visibility: visible;
+    opacity: 1;
+}
+.active .fadeInDown_slide {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+.active .fadeInLeft_slide {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+.active .fadeInRight_slide {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+.active .fadeInUp_slide {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.active .fadeInLeft_slide {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+/* ---------------------------------------------------------
+2. Home Examination and Application Area End
+------------------------------------------------------------*/
+
+/* ---------------------------------------------------------
+2. Home Strength Area Start
+------------------------------------------------------------*/
+.strength-area {
+    background-color: #fff;
+}
+.home-single-strength {
+    display: inline-block;
+    margin: 3px;
+    padding: 2px;
+    width: 10%;
+}
+.home-single-strength img {
+    border-radius: 50%;
+    border:2px solid rgba(178, 142, 44, 0) ;
+}
+.home-single-strength:hover img {
+    border: 2px solid rgba(178, 142, 44, 0.9);
+    /*box-shadow: 0px 1px 15px 7px rgba(178, 142, 44,.8);*/
+}
+.home-strength-box {
+    border-bottom: 1px solid #0f7c96;
+    padding-bottom: 47px;
+    padding-top: 13px;
+    text-align: center;
+}
+/* ---------------------------------------------------------
+3. Home About CILT Area Start
+------------------------------------------------------------*/
+.home-about-area {
+    /* background: #fff url("img/about-img/home-about.jpg") no-repeat scroll 0 0; */
+    height: 528px;
+    padding: 41px 0 40px;
+}
+/*.home-about-cilt-bd {*/
+    /*float: right;*/
+    /*margin: 7% 0;*/
+    /*width: 43%;*/
+/*}*/
+.home-about-cilt-bd > h3, h2.section-title{
+    color: #361163;
+    margin-bottom: 15px;
+    font-weight: 500;
+    position: relative;
+    text-align: left;
+}
+h2.section-title{
+    position: relative;
+}
+h2.section-title::after{
+    background-color: #361163;
+    content: "";
+    height: 3px;
+    left: 165px;
+    position: absolute;
+    top: 26px;
+    width: 43px;
+    z-index: 99;
+}
+h2.section-title::after {
+    height: 2px;
+    left: 0;
+    top: 46px;
+    width: 180px;
+}
+.home-about-cilt-bd > p {
+    color: #361163;
+    font-size: 17px;
+}
+.home-about-cilt-bd {
+    float: right;
+    margin: 10% 0;
+    width: 40%;
+}
+.home-about-cilt-bd a.cilt-button{
+    background-color: #361063;
+    border: 2px solid rgba(54, 17, 99, 1);
+    color: #fff;
+}
+a.cilt-button, .contact-form-area input.cilt-button[type="submit"], .button-hover-active {
+    background-color: rgba(54, 17, 99, 0.08);
+    border: 2px solid rgba(54, 17, 99, 1);
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 14px;
+    padding: 12px 20px;
+    text-transform: uppercase;
+}
+a.cilt-button:hover {
+    background-color: rgba(54, 17, 99, 1);
+    /*box-shadow: 1px 8px 7px rgba(54, 17, 99, 0.86);*/
+    color: #bb9459;
+}
+.button-hover-active{
+    background-color: rgba(54, 17, 99, 1);
+    /*box-shadow: 1px 8px 7px rgba(54, 17, 99, 0.86);*/
+    color: #bb9459;
+}
+.button-hover-active:hover{
+    color: rgba(54, 17, 99, 1);
+    /*box-shadow: 1px 8px 7px rgba(54, 17, 99, 0.86);*/
+    background-color: #bb9459;
+}
+/* ---------------------------------------------------------
+4. Home Membership box or Partners box Start
+------------------------------------------------------------*/
+.home-membership-area h2.section-title {
+    /*border-bottom: 1px solid #bb9459;*/
+    color: #bb9459;
+    /*font-style: italic;*/
+    /*margin-bottom: 4%;*/
+    /*padding: 0 0 2%;*/
+    /*text-align: center;*/
+}
+.home-membership-area h2.section-title::after {
+    background-color: #bb9459;
+}
+.home-membership-box .item {
+    margin: 14px 11px;
+}
+.home-membership-box .item > img {
+    border: 1px solid #bb9459;
+    /*box-shadow: 0 2px 9px 5px rgba(0, 0, 0, 0.17);*/
+    padding: 12px;
+}
+.home-membership-area .testi_prev, .home-membership-area .testi_next {
+    background-color: transparent;
+    color: #bb9459;
+    font-size: 29px;
+    top: 73px;
+}
+.home-membership-area .testi_prev:hover, .home-membership-area .testi_next:hover {
+    color: #361063;
+}
+.home-membership-area .testi_prev {
+    left: -9px;
+}
+.home-membership-area .testi_next {
+    right: -9px;
+}
+
+/* ---------------------------------------------------------
+5.  Home Young WiLAT Area
+------------------------------------------------------------*/
+.home-young-wilat-area {
+    background-image: url("img/about-img/home-young-wilat.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*min-height: calc(100vh - 85px);*/
+}
+.home-young-part {
+    padding: 8% 0;
+}
+.home-young-part > h3 {
+    color: #fff;
+}
+.home-young-part > p {
+    color: #fff;
+    margin: 20px 0;
+}
+.home-young-wilat-area .row div:last-child .home-young-part h3{
+    color: #b28e5e;
+}
+.home-young-wilat-area .row div:last-child .home-young-part a.cilt-button {
+    background-color: #b28e5e;
+    color: #361163;
+}
+.home-young-wilat-area .row div:last-child .home-young-part a.cilt-button:hover {
+    color: #fff;
+}
+.home-young-wilat-area .row div:last-child .home-young-part {
+    margin-left: 3%;
+    padding: 0;
+}
+/* ---------------------------------------------------------
+6. home-single-every-block Area Start
+------------------------------------------------------------*/
+.single-every-part-area {
+    /*min-height: calc(100vh - 85px);*/
+}
+.home-single-every-block {
+    background-color: #361163;
+    /*box-shadow: 0 8px 9px -2px rgba(178, 142, 44, 0.86);*/
+    /*margin-top: 14%;*/
+    position: relative;
+    text-align: center;
+}
+.home-single-every-block p {
+    bottom: 0;
+    color: #fff;
+    height: 60px;
+    padding: 8px 5px;
+}
+.home-single-every-block h4 {
+    background-color: #fff;
+    bottom: 0;
+    padding: 20px 10px;
+    width: 100%;
+    color: #b28e5e;
+}
+.home-single-every-block:hover h4{
+    color: #361163;
+}
+.home-single-every-block img {
+    height: 185px;
+}
+.home-single-every-block:hover img {
+    /*opacity: 0.5;*/
+}
+.single-every-part-area .row div:nth-child(2n) > .home-single-every-block {
+    /*background-color: #361163;*/
+    /*box-shadow: 0 8px 9px -2px rgba(54, 17, 99, 0.86);*/
+}
+.single-every-part-area .row div:nth-child(2n) > .home-single-every-block h4 {
+    /*color: #fff;*/
+}
+/* ---------------------------------------------------------
+7. Home News Area Start
+------------------------------------------------------------*/
+.news-area {
+    background-color: #ebebeb;
+}
+.single-news {
+    border-bottom: 1px solid #fff;
+    height: 450px;
+    width: 352px;
+}
+.news-area h3 {
+    border-bottom: 1px solid #b28e5e;
+    color: #b28e5e;
+    margin-bottom: 29px;
+    padding-bottom: 15px;
+}
+.single-news-content {
+    /*float: left;*/
+    /*width: 50%;*/
+}
+.single-news-content h4 {
+    margin-top: 24px;
+}
+.single-news-content > p {
+    padding: 20px 0;
+    width: 100%;
+}
+.news-time-part {
+    font-size: 12px;
+}
+.news-time-part i {
+    padding-right: 10px;
+}
+.single-news-img {
+    border: 1px solid #361163;
+    /*float: right;*/
+    /*width: 50%;*/
+}
+.news-area .single-news-img img {
+    height: 220px;
+    width: 100%;
+}
+.news-area .testi_prev, .news-area .testi_next {
+    background-color: #b28e5e;
+    font-size: 21px;
+    height: 30px;
+    line-height: 29px;
+    width: 33px;
+    color: #fff;
+}
+.news-area .testi_prev:hover, .news-area .testi_next:hover {
+    background-color: #361163;
+    color: #fff;
+}
+.news-area .testi_next {
+    right: 15px;
+}
+.news-area .testi_prev {
+    right: 59px;
+}
+.single-news-content a.cilt-button, .why-join-with-us a.cilt-button {
+    background-color: rgba(54, 17, 99, 1);
+    /*border: 2px solid rgba(54, 17, 99, 1);*/
+    /*color: #b28e5e;*/
+}
+/* ---------------------------------------------------------
+11. Footer Area Start
+------------------------------------------------------------*/
+footer {
+    background-color: #ebebeb;
+    width: 100%;
+}
+footer.section-padding{
+    padding: 100px 0 40px;
+}
+.footer-border-bottom {
+    border-bottom: 1px solid rgba(178, 142, 94, 0.35);
+}
+.footer-top-logo > img {
+    height: 132px;
+    margin-bottom: 30px;
+}
+.footer-top-logo.text-center.footer-border-bottom.padding-bottom > h4 {
+    padding: 10px 0;
+}
+.footer-top-logo {
+    /*font-style: italic;*/
+}
+/*-----------footer middle-----------*/
+.footer-middle, .footer-bottom {
+    padding: 100px 0;
+}
+footer h4.footer-widget-title {
+    color: #361163;
+    margin-bottom: 15px;
+}
+footer .footer-widget ul.footer-nav a {
+    color: #b28e5e;
+    text-decoration-line: underline;
+}
+footer .footer-widget ul.footer-nav a:hover {
+    color: #361163;
+}
+.footer-middle .footer-nav > li {
+    /*background: transparent url("img/footer-bullet.png") no-repeat scroll 0 5px;*/
+    /*margin-bottom: 10px;*/
+    /*padding-left: 13px;*/
+}
+.footer-nav li a i {
+    padding-right: 4px;
+}
+/*-----------footer bottom---------*/
+.footer-bottom .footer-nav > li {
+    display: inline-block;
+}
+.footer-bottom .footer-nav > li a img {
+    /*height: 54px;*/
+    /*margin-right: 8px;*/
+}
+.footer-bottom .footer-nav li a {
+    font-size: 31px;
+    margin-right: 12px;
+    padding: 1px 15px;
+    color: #b28e5e;
+}
+.footer-bottom .footer-nav li a:hover {
+    color: #361163;
+}
+.footer-bottom .footer-nav {
+    margin-top: 26px;
+}
+.footer-bottom form {
+    width: 530px;
+}
+.footer-bottom .col-sm-6 {
+    padding-left: 140px;
+}
+.footer-bottom form .form-control{
+    width: 75%;
+    margin-bottom:0;
+}
+.footer-bottom form button{
+    width: 23%;
+    background-color: #361163;
+    color: #fff;
+    border: 0;
+    font-weight: bold;
+}
+.footer-bottom form button:hover{
+    color: #b28e5e;
+}
+.footer-bottom form .form-group .form-control, .footer-bottom form button {
+    display: inline-block;
+    height: 50px;
+    margin-top: 0;
+}
+/*------footer copyright area------*/
+.copyright-area {
+    padding-top: 40px;
+}
+footer p.copyright, footer p.copyright a{
+    color: #361163;
+}
+footer p.copyright a {
+    /*text-decoration: underline;*/
+    padding: 0 2px;
+}
+footer p.copyright a:hover {
+    color: #b28e5e;
+}
+footer p.copyright a:hover{
+    /*text-decoration: underline;*/
+}
+.copyright-area p:first-child {
+    float: left;
+}
+.copyright-area p:last-child {
+    float: right;
+}
+/* ---------------------------------------------------------
+11. Footer Area End
+------------------------------------------------------------*/
+
+/* ---------------------------------------------------------
+11. About Page Area Start
+------------------------------------------------------------*/
+.section-banner-area.section-padding {
+    background-color: #5b308e;
+    color: #fff;
+    padding: 34px 0;
+}
+.section-banner-area .section-banner-content > h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+/*Core Value Area*/
+.core-value-area.section-padding {
+    background-color: rgba(243, 238, 244, 0.4);
+}
+.core-value-content > p , .wilat-strength-quote .who-we-content > p, .wilat-regional-women-area p, .young-professionals-strength-quote-area p{
+    color: #76327d;
+    font-size: 19px;
+    line-height: 29px;
+}
+.core-value-area.wilat-overview .core-value-content p > span {
+    font-size: 28px;
+}
+.core-value-content.text-center span, .wilat-strength-quote .who-we-content > p span, .wilat-regional-women-area p span, .young-professionals-strength-quote-area p span {
+    /*color: #b28e5e;*/
+    font-weight: 700;
+}
+/*who-we-img*/
+.who-we-img {
+    /*background-color: #000;*/
+    /*height: 100%;*/
+    /*opacity: 0.52;*/
+    /*width: 100%;*/
+}
+.who-img-wrap {
+    /*background: rgba(0, 0, 0, 0) url("img/about-img/membership-grade.jpg") no-repeat scroll 0 0;*/
+    /*box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.68);*/
+    /*height: 341px;*/
+}
+.membership-bene-img, .who-img-wrap {
+    /*background: rgba(0, 0, 0, 0) url("img/about-img/membership-grade.jpg") no-repeat scroll 0 0;*/
+    /*background-repeat: no-repeat;*/
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.68);
+    height: 341px;
+}
+.who-we-content > h3 {
+    background-color: #b28e5e;
+    /*box-shadow: 5px 12px 7px rgba(0, 0, 0, 0.3); old style*/
+    /*box-shadow: 7px 8px 4px rgba(0, 0, 0, 0.74);*/
+
+    color: #fff;
+    padding: 10px 8px;
+    text-transform: capitalize;
+}
+.who-we-content > .who-we-text {
+    padding: 6% 8px;
+}
+/*what we do*/
+.what-we-do-area.section-padding {
+    background-color: rgba(243, 238, 244, 0.4);
+}
+.what-we-do-wrap {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.what-we-do-wrap .single-ww-do {
+    background-color: #b28e5e;
+    color: #fff;
+    display: inline-flex;
+    font-size: 18px;
+    font-weight: bold;
+    height: 210px;
+    margin: 8px 4px 0;
+    padding: 5px 5px;
+    text-align: center;
+    width: 24%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.single-ww-do i {
+    margin-bottom: 18px;
+}
+.what-we-do-middle-box {
+    display: table;
+    height:358px;
+}
+.what-ww-logo > img {
+    height: 63px;
+}
+.what-ww-logo {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+/*why join with us*/
+.why-join-with-us .who-we-content > .who-we-text, .wilat-groups-lists-area .who-we-content > .who-we-text {
+    padding: 6% 8px 0;
+}
+.who-we-text > p {
+    color: #361163;
+    font-size: 15px;
+    line-height: 26px;
+    padding: 9px 0;
+}
+.who-we-text p i {
+    color: #361163;
+    padding-right: 5px;
+}
+.why-join-with-us h3 , .wilat-groups-lists-area h3{
+    background-color: #361163;
+}
+/*Partners area*/
+.about-partner-area.section-padding {
+    background-color: rgba(243, 238, 244, 0.4);
+    /*margin-bottom: 15px;*/
+}
+.single-partner {
+    border: 1px solid #361163;
+    display: inline-block;
+    margin: 29px 24px 0 0;
+    padding: 2px;
+}
+.single-partner:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+.about-partner-box .modal-body{
+    text-align: center;
+}
+.about-partner-box .modal-body p{
+    padding: 30px;
+    text-align: justify;
+}
+.about-partner-box .modal-header > h4{
+    text-align: center;
+}
+
+/*History area Style*/
+.history-area {
+    /*background-color: rgba(243, 238, 244, 0.4);*/
+}
+.about-partner-area{
+    /*background-color: rgba(243, 238, 244, 0.4);*/
+}
+.history-wrap > img {
+    border-bottom: 1px solid #b28e5e;
+    height: 311px;
+    margin-bottom: 4%;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 45%;
+}
+.entries::before {
+    background-color: #361163;
+    bottom: 0;
+    content: "";
+    height: 600px;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: 4px;
+}
+.entries {
+    left: -5px;
+    margin: auto;
+    max-width: 800px;
+    position: relative;
+    width: calc(100% - 80px);
+}
+.entries .entry {
+    width: calc(50% - 80px);
+    float: left;
+    padding: 20px;
+    clear: both;
+    text-align: right;
+}
+.entries .entry:not(:first-child) {
+    margin-top: -60px;
+}
+.entries .entry .title {
+    font-size: 32px;
+    margin-bottom: 12px;
+    position: relative;
+    color: #000;
+}
+.entries .entry .title::before {
+    background-color: #b28e5e;
+    border: 4px solid #361163;
+    border-radius: 100%;
+    content: "";
+    height: 15px;
+    position: absolute;
+    right: -107px;
+    top: 55%;
+    transform: translateY(-50%);
+    width: 15px;
+    z-index: 9;
+}
+.entries .entry .title.big:before {
+    width: 24px;
+    height: 24px;
+    -webkit-transform: translate(5px, -50%);
+    transform: translate(5px, -50%);
+}
+.entries .entry .body {
+    color: #aaa;
+}
+.entries .entry .body p {
+    line-height: 1.4em;
+    text-align: left;
+}
+.entries .entry:nth-child(2n) {
+    text-align: left;
+    float: right;
+}
+.entries .entry:nth-child(2n) .title:before {
+    left: -107px;
+}
+.entries .entry:nth-child(2n) .title.big:before {
+    -webkit-transform: translate(-5px, -50%);
+    transform: translate(-5px, -50%);
+}
+
+/*Team Members Area*/
+.about-partner-area.team-members-area.section-padding {
+    margin-bottom: 0;
+    background-color: rgba(243, 238, 244, 0.4);
+}
+.chairman-m-area{
+    margin-bottom: 50px;
+}
+.chairman-img{
+    text-align: right;
+}
+.chairman-img > img {
+    height: 407px;
+    width: 100%;
+}
+.chairman-message{
+    background-color: rgba(243, 238, 244, 0.7);
+    padding: 44px;
+}
+.chairman-message > h3{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: #5b308e;
+}
+.chairman-message p{
+    padding-left: 36px;
+    position: relative;
+    color: rgba(0,0,0,.7);
+    font-style: italic;
+}
+.chairman-message p > i{
+    position: absolute;
+    left: 0;
+    color: rgba(0,0,0,.7);
+}
+/*.signature > img{*/
+    /*height: 36px;*/
+    /*margin-top: 30px;*/
+    /*margin-left: 36px;*/
+/*}*/
+.chairman-message .president-name {
+    text-transform: capitalize;
+    color: #086faf;
+    padding: 17px 0 0 36px;
+    font-size: 21px;
+}
+.about-partner-box {
+    text-align: left;
+}
+.team-members-area .single-partner {
+    border: 1px solid transparent;
+    width: 19.7%;
+    margin: 0 0 20px;
+}
+.about-partner-box .single-partner > img {
+    width: 100%;
+    height: auto;
+}
+.single-partner > img {
+    height: 119px;
+    width: 100%;
+}
+.team-contact > h5 {
+    margin: 6% 0;
+}
+.team-contact > button {
+    border-radius: 0;
+}
+.team-contact {
+    padding: 10px 0 0;
+    text-align: center;
+    color: #361163;
+}
+.team-contact a {
+    color: #b28e5e;
+    word-wrap: break-word;
+}
+.team-contact span > i{
+    padding-right: 5px;
+}
+/* ---------------------------------------------------------
+11. About Page Area End
+------------------------------------------------------------*/
+
+/* ---------------------------------------------------------
+12. Membership Page Area Start
+------------------------------------------------------------*/
+
+/*----Code of Conduct Start----*/
+.who-we-are-area.why-join-with-us.membership-code-conduct .who-we-text p {
+    padding: 0 0 11px;
+    line-height: 23px;
+}
+/*----Code of Conduct End----*/
+
+/*Tabs Site Style*/
+.membership-grades-area .board {
+    background-color:#5b308e;
+}
+.membership-grades-area .board .nav-tabs {
+    box-sizing: border-box;
+    padding: 0;
+    position: relative;
+}
+.membership-grades-area .board > div.board-inner{
+    background-color: #fafafa;
+    text-align: center;
+}
+.membership-grades-area .nav-tabs > li.active > a, .membership-grades-area .nav-tabs > li.active > a:hover, .membership-grades-area .nav-tabs > li.active > a:focus {
+    background-color: #5b308e;
+    border: 0 none transparent;
+    color: #fff;
+    cursor: default;
+}
+.membership-grades-area .nav-tabs > li {
+    padding-top: 7px;
+    width: 25%;
+}
+ul#myTab li a {
+    padding: 12px 6px;
+}
+.about-tabs-area .nav-tabs > li h6 {
+    font-size: 14px;
+    font-weight: normal;
+    left: -41px;
+    padding: 0 0 18px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 77px;
+    width: 151px;
+}
+.about-tabs-area .nav-tabs > li a {
+    border-radius: 100%;
+    height: 70px;
+    margin: 8px auto;
+    padding: 6px 8px;
+    width: 70px;
+    border: 0;
+}
+.about-tabs-area .nav > li > a:focus, .about-tabs-area .nav > li > a:hover {
+    background-color: transparent;
+    border:0;
+    text-decoration: none;
+}
+.membership-grades-area .tab-content {
+    height: 243px;
+    padding: 15px 43px;
+}
+.membership-grades-area .tab-pane{
+    position: relative;
+    padding-top: 0;
+}
+.membership-grades-area .tab-content .head {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    color: #fff;
+    /*font-family: "Roboto Condensed",sans-serif;*/
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left: 26px;
+    margin-right: 26px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+.membership-grades-area .tab-content .tab-pane p{
+    color: #fff;
+}
+@media( max-width : 585px ){
+    .membership-grades-area .board {
+        width: 90%;
+        height:auto !important;
+    }
+    .membership-grades-area span.round-tabs {
+        font-size:16px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .membership-grades-area .tab-content .head{
+        font-size:20px;
+    }
+    .membership-grades-area .nav-tabs > li a {
+        width: 50px;
+        height: 50px;
+        line-height:50px;
+    }
+    .membership-grades-area li.active:after {
+        content: " ";
+        position: absolute;
+        left: 35%;
+    }
+    .membership-grades-area .btn-outline-rounded {
+        padding:12px 20px;
+    }
+}
+
+/*Membership benefits*/
+.membership-benefits.section-padding {
+    background-color: #f3eef4;
+}
+.membership-code-conduct h3 {
+    background-color: #b28e5e;
+}
+/*Membership Good Standing*/
+/* width */
+::-webkit-scrollbar{
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb{
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+
+.m-good-standing.section-padding {
+    background-color: rgba(178, 142, 94, 0.71);
+    display: none;
+}
+.m-good-standing .table-responsive {
+    max-height: 500px;
+    overflow: auto;
+}
+.m-good-standing .table-responsive .table thead{
+    background-color: #361163;
+    color: #fff;
+}
+.m-good-standing .table-responsive th {
+    min-width: 72px;
+    border: 1px solid #fff;
+}
+.m-good-standing .table-responsive td {
+    border-bottom: 1px solid #ddd;
+    text-transform: capitalize;
+}
+.m-good-standing .table-responsive p {
+    margin: 0 2% 3%;
+}
+/*Membership Fees*/
+.who-we-are-area.why-join-with-us.membership-fees {
+    background-color: rgba(243, 238, 244, 0.4);
+}
+* {
+    box-sizing: border-box;
+}
+.membership-fees .columns {
+    float: left;
+    padding: 0 8px;
+    width: 49.3%;
+}
+.membership-fees .price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #fff;
+}
+
+.membership-fees .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+.membership-fees .price .header {
+    background-color: #361163;
+    color: white;
+    font-size: 18px;
+}
+.membership-fees .price li {
+    border-bottom: 1px solid #eee;
+    padding: 12px;
+    text-align: center;
+}
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+.membership-fees .columns a.cilt-button {
+    margin-top: 0;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.m-fees-wrap .columns:last-child li.header, .m-fees-wrap .columns:last-child li a.cilt-button {
+    background-color: #b28e5e;
+    border-color: #b28e5e;
+}
+.membership-fees .who-we-text a.cilt-button:last-child {
+    background-color: #b28e5e;
+    border-color: #b28e5e;
+    color: #361163;
+}
+.membership-fees .who-we-text a.cilt-button:hover:last-child {
+    color: #fff;
+    box-shadow: 1px 8px 7px rgba(178, 142, 94, 0.86);
+}
+.m-fees-wrap .columns:last-child li a.cilt-button:hover {
+    color: #361163;
+    box-shadow: 1px 8px 7px rgba(178, 142, 94, 0.86);
+}
+
+@media only screen and (max-width: 600px) {
+    .membership-fees .columns {
+        width: 100%;
+    }
+}
+.membership-fees .who-we-text > h4 {
+    color: #361163;
+    padding: 21px 0;
+}
+
+/*----Wilat Page Style----*/
+.wilat-overview .core-value-content p i, .wilat-strength-quote .who-we-content > p i , .wilat-regional-women-area p i , .young-professionals-strength-quote-area p i{
+    padding: 0 10px;
+}
+.wilat-strength-quote .who-img-wrap {
+    /*background: rgba(0, 0, 0, 0) url("img/membership-img/wilat-mission-vision-img.jpg") no-repeat scroll 0 0;*/
+    height: 320px;
+}
+.wilat-strength-quote .who-we-content > p {
+    margin: 12% 0;
+}
+/*Wilat Do Widget*/
+.wilat-regional-women-area.yp-regional-man-area.yp-bangladeshi-forum,.why-join-with-us.brouchure-area {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+.wilat-all-widget.what-we-do-area{
+    background-color: #fff;
+}
+.wilat-all-widget .wilat-do-wrap .single-ww-do {
+    background-color: #fff;
+    height: 251px;
+    margin: 0;
+    padding: 7% 5% 4%;
+    text-align: justify;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    /* box-shadow: 0 0px 7px rgba(0, 0, 0, 0.2); */
+    font-weight: normal;
+    margin-bottom: 30px;
+    justify-content: start;
+}
+.wilat-all-widget .wilat-do-wrap .single-ww-do h4 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.23);
+    text-transform: capitalize;
+    padding-bottom: 8px;
+    width: 75%;
+    margin: 0 auto 10px;
+    text-align: center;
+    color: #361163;
+}
+.wilat-all-women-list .single-partner > img {
+    height: auto;
+}
+/*Join Wilat Area*/
+.wilat-join-now-area.section-padding {
+    background-color: #361163;
+    color: #fff;
+    padding: 40px 0;
+}
+.wilat-join-now-area a.cilt-button {
+    background-color: #b28e5e;
+    margin: 0 0 0 40px;
+    padding: 15px 46px;
+}
+.wilat-join-now-area a.cilt-button:hover {
+    color: #361163;
+    text-decoration: underline;
+}
+/*---wilat-regional-women-area---*/
+.wilat-regional-women-area.yp-regional-man-area{
+    background-color: #fff;
+}
+.wilat-regional-women-area {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+.wilat-regional-women-area.wilat-bangladeshi-forum {
+    background-color: #fff;
+    /*background-color: rgba(0, 0, 0, 0.02);*/
+}
+.wilat-groups-lists-area a.cilt-button , .knowledge-centre-overview a.cilt-button{
+    background-color: rgba(54, 17, 99, 1);
+    border: 2px solid rgba(54, 17, 99, 1);
+    color: #fff;
+}
+.wilat-groups-lists-area a.cilt-button:hover, .knowledge-centre-overview a.cilt-button:hover {
+    background-color: rgba(54, 17, 99, 1);
+    color: #b28e5e;
+}
+.wilat-all-women-list .single-partner {
+    padding: 0;
+    width: 18%;
+    margin: 0 8px;
+}
+.wilat-all-women-list .team-contact {
+    padding: 10px 9px 0;
+}
+.wilat-all-women-list .team-contact > h4 {
+    font-size: 15px;
+    height: 37px;
+}
+.wilat-all-women-list .team-contact > h5 {
+    font-size: 12px;
+    height: 28px;
+    margin: 3% auto;
+    width: 90%;
+}
+.wilat-all-women-list .team-contact h6 {
+    height: 32px;
+    margin: 10px 0;
+}
+.wilat-regional-women-area p{
+    margin-bottom: 4%;
+}
+.wilat-groups-lists-area .who-we-text > p > a{
+    color: #b28e5e;
+    text-decoration: underline;
+}
+
+/*----Young Professionals Group Page Style----*/
+/*young-professionals-strength-quote-area*/
+.young-professionals-strength-quote-area .who-img-wrap {
+    /* background: rgba(0, 0, 0, 0) url("img/membership-img/young-prof-img.png") no-repeat scroll 0 0; */
+    height: 316px;
+}
+.young-professionals-strength-quote-area p {
+    margin: 20% 0 0;
+    padding: 0 12px;
+}
+.yp-regional-man-area .wilat-all-women-list .single-partner {
+    margin: 0 8px 18px;
+    width: 23%;
+}
+/*Yp Group by region*/
+.young-professionals-group-lists-area .who-img-wrap{
+    /* background: rgba(0, 0, 0, 0) url("img/membership-img/yp-group-by-reagion.png") no-repeat scroll 0 0; */
+    height: 316px;
+}
+/*YP Benefits area*/
+.young-professionals-benefits-area .who-img-wrap {
+    /* background: rgba(0, 0, 0, 0) url("img/membership-img/yp-benefits-img.jpg") no-repeat scroll 0 0; */
+    height: 402px;
+}
+.young-professionals-benefits-area a.cilt-button {
+    background-color: #b28e5e;
+    color: #fff;
+}
+.young-professionals-benefits-area a.cilt-button:hover {
+    text-decoration: underline;
+}
+/*why you join yp*/
+.why-join-wp-area a.cilt-button {
+    margin: 14px 0 0;
+}
+/* Corporate-strength-quote-area */
+.wilat-strength-quote.corporate-strength-quote-area .who-img-wrap {
+    /* background: rgba(0, 0, 0, 0) url("img/membership-img/corporate-membership-img.jpg") no-repeat scroll 0 0; */
+    height: 417px;
+}
+.corporate-strength-quote-area .who-we-content > p {
+    margin: 23% 0 0;
+}
+.corporate-advantage-extra-text > p {
+    background-color: rgba(54, 17, 99, 0.71);
+    border-top: 1px solid rgba(0, 0, 0, 0.14);
+    color: #fff;
+    margin-top: 1%;
+    padding: 4% 14px 49px;
+    position: relative;
+}
+.corporate-advantage-extra-text p > img {
+    position: absolute;
+    top: -26px;
+}
+.membership-corporate-advantage a.cilt-button:hover{
+    /*background-color: #361163;*/
+    /*color: #b28e5e;*/
+}
+/* ---------------------------------------------------------
+12. Membership Page Area End
+------------------------------------------------------------*/
+
+/* ---------------------------------------------------------
+13. Education and Exams Page Area Start
+------------------------------------------------------------*/
+/*download center page style || Education and Course Style*/
+.download-box , .single-course{
+    background-color: #00a8e5;
+    color: #fff;
+    padding: 27px 12px;
+    text-align: center;
+}
+.download-box > p, .single-course p {
+    color: #fff;
+    margin: 21px 0 5px;
+}
+.download-box > h4 , .single-course > h4 {
+    border-bottom: 1px solid #fff;
+    width: 85%;
+    padding-bottom: 6px;
+    margin: 0 auto;
+}
+.download-box a.cilt-button{
+    background-color: #fff;
+    color: #b28e5e;
+    border:0;
+}
+.download-box a.cilt-button:hover {
+    color: #361163;
+}
+.download-center-area div:nth-child(even) .download-box , .all-course-part .col-sm-6:first-child .single-course, .all-course-part .col-sm-6:last-child .single-course  {
+    /*background-color: #b28e5e;*/
+}
+.download-center-area div:nth-child(even) .download-box a.cilt-button{
+    /*background-color: #361163;*/
+}
+.download-center-area div:nth-child(even) .download-box a.cilt-button:hover{
+    /*color: #b28e5e;*/
+}
+/*cilt-knowledge-area*/
+.cilt-knowledge-area.section-padding {
+    padding: 50px 0 15px;
+}
+.cilt-knowledge-area .row {
+    /*margin-bottom: 40px;*/
+}
+.knowldege-video iframe {
+    margin-bottom: 6%;
+    width: 100%;
+}
+.who-we-content {
+    /*float: left;*/
+    padding-right:15px;
+    /*width: 50%;*/
+    width: 100%;
+}
+.knowldege-video {
+    /*float: right;*/
+    /*padding-left:15px;*/
+    /*width: 100%;*/
+}
+.knowldege-video {
+    margin-bottom: 35px;
+    padding-left: 15px;
+    width: 100%;
+}
+.cilt-knowledge-area .row .col-sm-12:nth-child(even) .knowldege-video {
+    /*float: left;*/
+    /*padding-right:15px;*/
+}
+.cilt-knowledge-area .row .col-sm-12:nth-child(even) .who-we-content {
+    /*float: right;*/
+    /*padding-left:15px;*/
+}
+.cilt-knowledge-area .row:nth-child(odd) div .who-we-content h3 {
+    background-color: #361163;
+}
+/*---Custom Youtube Video knowledge center start---*/
+.knowldege-video .embed-video a{
+    background-color: #361063;
+    border: medium none;
+    border-radius: 50%;
+    /*box-shadow: 0 0 100px rgba(0, 0, 0, 0.7);*/
+    color: #b28e5e;
+    cursor: pointer;
+    font-size: 35px;
+    height: 80px;
+    left: 42%;
+    line-height: 84px;
+    opacity: 1;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 33%;
+    width: 80px;
+}
+/*---Custom Youtube Video knowledge center end---*/
+
+/* Single Course Area*/
+.courses-area, .single-course-area {
+    padding: 60px 0 30px;
+}
+.courses-part > img {
+    height: 530px;
+    width: 100%;
+}
+.course-box {
+    border: 1px solid #d1d1d1;
+    margin-bottom: 30px;
+    padding: 15px 15px 38px 15px;
+    position: relative;
+    background-color: #fff;
+}
+.course-box:hover {
+    border: 1px solid #361063;
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 16px 0 rgba(0, 0, 0, 0.19);
+}
+.course-box figcaption {
+    margin-top: 15px;
+}
+.sub-cource-title {
+    color: #b28e5e;
+    margin-bottom: 15px;
+    height: 67px;
+}
+.course-box figcaption div span > i {
+    color: rgba(0, 0, 0, 0.56);
+    padding-right: 10px;
+}
+.course-box figcaption > div {
+    color: rgba(0, 0, 0, 0.57);
+}
+.course-box .apply-now {
+    font-weight: bold;
+    border-bottom: 2px solid;
+    text-align: right;
+    font-size: 16px;
+    width: 27%;
+    float: right;
+}
+.course-box:hover .sub-cource-title,.course-box:hover figcaption div span > i, .course-box:hover figcaption > div, .course-box:hover .apply-now {
+    color: rgba(54, 17, 99, 0.9);
+}
+
+/*-----Course Details Page Style-----*/
+.courses-part > h3, .single-course-details-area > h4, .course-outline-area > h4, .course-outline-area .course-block > p > strong, .instructor-area  .course-block > p > strong{
+    color: #8b5192;
+}
+.course-outline-area > h4 {
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+.courses-part > h3 {
+    padding: 30px 0 15px;
+}
+.single-course-details-area > h4 {
+    padding: 10px 0;
+}
+.single-course-details-area a.cilt-button{
+    background-color: rgba(54, 17, 99, 0.9);
+    /*border: 2px solid rgba(54, 17, 99, 1);*/
+    padding: 10px 35px;
+}
+.single-course-details-area a.cilt-button:hover{
+    background-color: rgba(54, 17, 99, 1);
+}
+.course-outline-area .course-block ol {
+    padding-left: 28px;
+}
+/*.courses-part, .course-outline-area, .instructor-area {*/
+    /*background-color: rgba(0, 0, 0, 0.05);*/
+/*}*/
+.courses-part {
+    margin-bottom: 10px;
+}
+.courses-part, .course-outline-area, .instructor-area {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 16px;
+}
+.instructor-area {
+    border-left: 10px solid #fff;
+}
+.instructor-area .course-block ol {
+    margin: 0;
+    padding-left: 0;
+}
+.instructor-area .course-block p {
+    margin: 7px 0;
+}
+.instructor-area .course-block p > strong {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.course-block {
+    position: relative;
+}
+.instructor-area .course-block ol > li {
+    list-style: outside none none;
+}
+/*.instructor-name {*/
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    /*bottom: 0px;*/
+    /*color: #fff;*/
+    /*display: block;*/
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*padding: 14px;*/
+    /*text-align: center;*/
+    /*z-index: 99;*/
+/*}*/
+/* ---------------------------------------------------------
+12. Education and Exams Page Area End
+------------------------------------------------------------*/
+
+/* ---------------------------------------------------------
+13. News and Events Page Area Start
+------------------------------------------------------------*/
+.news-page-area.news-area {
+    background-color: #fff;
+    padding: 40px 0;
+}
+.all-news .single-news-content h4, .all-news .single-news-content p {
+    color: #361163;
+}
+.all-news .single-news {
+    border-bottom: 1px solid #b28e5e;
+    height: auto;
+    margin-bottom: 26px;
+    width: 100%;
+    padding-bottom: 26px;
+}
+/*News Details Page style*/
+.news-details-area.news-area .single-news-img img {
+    height: 380px;
+    width: 100%;
+}
+.news-details-area .all-news .single-news {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: left;
+}
+.news-details-area .pagination > li > a, .news-details-area .pagination > li > span {
+    /*background-color: #fff;*/
+    border: 1px solid #b28e5e;
+    /*color: #b28e5e;*/
+    /*float: left;*/
+    /*line-height: 1.42857;*/
+    /*margin-left: -1px;*/
+    /*padding: 6px 12px;*/
+    /*position: relative;*/
+    /*text-decoration: none;*/
+}
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    background-color: #361163;
+    border-color: #361163;
+    color: #fff;
+    /*cursor: default;*/
+    /*z-index: 3;*/
+}
+/*.news-sidebar .news-sidebar-2 a {*/
+    /*color: #361163;*/
+/*}*/
+/*aside news list part style*/
+.news-list-box > h4 {
+    background-color: #b28e5e;
+    margin-bottom: 5px;
+    padding-bottom: 0;
+    text-transform: capitalize;
+}
+.news-list-box > h4 > a {
+    color: #fff;
+    font-size: 18px;
+    line-height: 41px;
+    padding-left: 12px;
+}
+.news-list-box > h4 > a:hover, .news-list-box > h4 > a.active {
+    color: #361163;
+}
+ul.news-sidebar-2 {
+    padding: 3px 0 12px 19px;
+}
+ul.news-sidebar-2 > li {
+    border-bottom: 1px solid #361163;
+}
+ul.news-sidebar-2 > li:hover {
+    border-bottom: 1px solid #b28e5e;
+}
+ul.news-sidebar-2 > li.active {
+    background-color: rgba(178, 142, 44, 0.5);
+    color: #361163;
+}
+ ul.news-sidebar-2 > li.active > a:hover {
+    color: #361163;
+}
+ul.news-sidebar-2 a {
+    color: #361163;
+    line-height: 33px;
+    padding-left: 10px;
+}
+ul.news-sidebar-2 > li > a > i {
+    padding-right:5px;
+}
+ul.news-sidebar-2 a:hover {
+    color: #b28e5e;
+}
+/* ---------------------------------------------------------
+13. News and Events Page Area End
+------------------------------------------------------------*/
+
+/* ---------------------------------------------------------
+14. contact-page-area Start
+------------------------------------------------------------*/
+.contact-page-area{
+    position: relative;
+    padding: 18px 0;
+}
+.contact-part-all {
+    background-color: rgba(54, 17, 99, 1);
+    bottom: 5%;
+    box-shadow: 1px 3px 17px rgba(0, 0, 0, 0.5);
+    left: 0;
+    padding: 3%;
+    position: absolute;
+}
+.contact-page-area iframe {
+    margin-bottom: 320px;
+}
+.contact-address-area {
+    background-color: rgba(54, 17, 99, 0.5);
+    padding: 3%;
+}
+.contact-form-area {
+    padding: 3%;
+}
+.contact-address-area > h3, .contact-form-area > h3 {
+    border-bottom: 1px solid #fff;
+    font-size: 23px;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+}
+.contact-address-area h4 {
+    color: #b28e5e;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+.contact-address-area h4 , .contact-form-area > h3, .contact-address-area > h3 {
+    text-transform: capitalize;
+}
+.contact-address-area p, .contact-address-area p > a, .contact-form-area > h3, .contact-address-area > h3 {
+    color: #fff;
+}
+.contact-address-area .opening-hours > span{
+    color: #b28e5e;
+    font-weight: bold;
+    font-size: 18px;
+}
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    /*border-radius: 4px;*/
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    height:48px;
+}
+.contact-form-area input.cilt-button[type="submit"] {
+    background-color: #fff;
+    border: 0 none;
+    color: #361163;
+    padding: 14px 32px;
+}
+.contact-form-area input.cilt-button[type="submit"]:hover {
+    background-color: #b28e5e;
+    color: #361163;
+}
+/* ---------------------------------------------------------
+14. contact-page-area End
+------------------------------------------------------------*/
+
+/* ---------------------------------------------------------
+14. Career Page Style Start
+------------------------------------------------------------*/
+.career-area .overlay_port{
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    height: 219px;
+    width: 100%;
+}
+/* ---------------------------------------------------------
+14. Career Page Style End
+------------------------------------------------------------*/
+
+/* ---------------------------------------------------------
+  Login Page Style Start
+------------------------------------------------------------*/
+.login-page-area.section-padding {
+    padding: 60px 0 40px;
+}
+.login-page-area .panel-login {
+    border-color: #ccc;
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.login-page-area .panel-login>.panel-heading {
+    color: #00415d;
+    background-color: #fff;
+    border-color: #fff;
+    text-align:center;
+}
+.login-page-area .panel-login>.panel-heading a{
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    font-size: 15px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.login-page-area .panel-login>.panel-heading a.active{
+    color: #b28e5e;
+    font-size: 18px;
+    border-bottom: 1px solid #b28e5e;
+}
+.login-page-area .panel-login>.panel-heading hr{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    clear: both;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.login-page-area .panel-login input[type="text"],.login-page-area .panel-login input[type="email"],.login-page-area .panel-login input[type="password"] {
+    height: 45px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.login-page-area .panel-login input:hover,
+.login-page-area .panel-login input:focus {
+    outline:none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-color: #ccc;
+}
+.login-page-area .btn-login {
+    background-color: #b28e5e;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    height: auto;
+    font-weight: normal;
+    padding: 14px 0;
+    text-transform: uppercase;
+    border-color: #b28e5e;
+}
+.login-page-area .btn-login:hover,
+.login-page-area .btn-login:focus {
+    color: #fff;
+    background-color:#b3874d;
+    border-color:#b3874d;
+}
+.login-page-area .forgot-password {
+    text-decoration: underline;
+    color: #888;
+}
+.login-page-area .forgot-password:hover,
+.login-page-area .forgot-password:focus {
+    text-decoration: underline;
+    color: #666;
+}
+
+.login-page-area .btn-register {
+    background-color: #5b3e7f;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    height: auto;
+    font-weight: normal;
+    padding: 14px 0;
+    text-transform: uppercase;
+    border-color: #5b3e7f;
+}
+.login-page-area .btn-register:hover,
+.login-page-area .btn-register:focus {
+    color: #fff;
+    background-color: #361163;
+    border-color: #361163;
+}
+/* ---------------------------------------------------------
+  Login Page Style End
+------------------------------------------------------------*/
+
+/* ---------------------------------------------------------
+  Back to Top Style Start
+------------------------------------------------------------*/
+#toTop{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
+#toTop.btn-info {
+    background-color: rgba(54, 17, 99, 0.39);
+    border-color: rgba(54, 17, 99, 0.39);
+    color: #fff;
+    padding: 5px 12px;
+}
+#toTop.btn-info:hover {
+    background-color: rgba(54, 17, 99, 1.0);
+    border-color:  rgba(54, 17, 99, 1.0);
+    color: #fff;
+    padding: 5px 12px;
+}
+#toTop > .glyphicon.glyphicon-chevron-up {
+    display: block;
+}
+
+/* ---------------------------------------------------------
+24. RESPONSIVE  CSS
+------------------------------------------------------------*/
+@media only screen and (min-width: 1920px){
+}
+/*=====================================
+For My Custom Medium Screen
+=======================================*/
+/*===============================
+For Medium Layout Screen
+=================================*/
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .container {
+        width: 970px;
+    }
+    .section-padding {
+        padding: 70px 0;
+    }
+    .top-header-country-list .sub-menu {
+        left: 19px !important;
+        width: 936px !important;
+    }
+    header .main-menu-area .navbar-inverse.affix-top .navbar-brand > img ,   header .main-menu-area .navbar-inverse.affix .navbar-brand > img{
+        height: 39px;
+    }
+    header .main-menu-area .navbar-inverse.affix-top .navbar-nav > li > a, header .main-menu-area .navbar-inverse.affix .navbar-nav > li > a {
+        font-size: 12px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .sub-menu > li > a {
+        font-size: 12px;
+    }
+    header ul.navbar-right .form-li {
+        margin-right: 6px;
+        width: 160px;
+    }
+    header ul.navbar-right .form-li .form-control {
+        padding: 6px 0 6px 7px;
+    }
+    .home-about-area {
+        height: 385px;
+        width: 50%;
+    }
+    /*.home-about-cilt-bd {*/
+        /*margin: 4% 0;*/
+        /*width: 45%;*/
+    /*}*/
+    .home-about-cilt-bd {
+        margin: 2% 0;
+        width: 33%;
+    }
+    .home-single-every-block img {
+        height: 133px;
+    }
+    .home-single-every-block h4 {
+        font-size: 16px;
+    }
+    .home-young-wilat-area .home-young-part h3 {
+        font-size: 21px;
+    }
+    .news-area iframe{
+        width: 100%;
+    }
+    .footer-bottom .footer-nav > li a img {
+        height: 47px;
+        margin-right: 1px;
+    }
+    .footer-bottom form .form-control {
+        width: 50%;
+    }
+    .home-membership-area .testi_prev {
+        left: -5px;
+        top:57px;
+    }
+    .home-membership-area .testi_next {
+        right: -5px;
+        top:57px;
+    }
+    .team-members-area .single-partner {
+        width: 19%;
+    }
+    .about-partner-box{
+        text-align: center;
+    }
+    .what-we-do-wrap .single-ww-do {
+        height: 169px;
+        padding: 5% 2%;
+    }
+    .single-ww-do i {
+        margin-bottom: 9px;
+    }
+    .team-contact a {
+        word-wrap: break-word;
+    }
+    .wilat-all-women-list .single-partner {
+        margin: 0 2px;
+        width: 19%;
+    }
+    .wilat-all-women-list .team-contact h6 {
+        height: 38px;
+        margin: 19px 0 6px;
+    }
+    .wilat-all-widget .wilat-do-wrap .single-ww-do {
+        height: 281px;
+    }
+    .wilat-join-now-area a.cilt-button {
+        margin: 15px 0 0 40px;
+    }
+    .knowldege-video iframe {
+        height: 242px;
+    }
+    .download-box > h4
+    /*, .single-course > h4*/
+    {
+        font-size: 16px;
+        width: 100%;
+    }
+    .download-box a.cilt-button {
+        font-size: 12px;
+        padding: 8px 9px;
+    }
+    .news-details-area.news-area .single-news-img img {
+        height: auto;
+    }
+    .course-box .apply-now {
+        width: 33%;
+        margin-top: 4px;
+    }
+
+}
+
+/*=========================
+Tablet layout
+=========================*/
+/*  Layout: 768. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 750px;
+    }
+    /*Header menu style start*/
+    .top-right-menu ul li a {
+        padding: 10px 5px!important;
+        font-size: 12px!important;
+    }
+    .top-header-country-list ul > li > a {
+        line-height: 41px;
+        font-size: 11px!important;
+        padding: 6px 0 6px 7px;
+    }
+    .header-top-area .col-sm-4{
+        padding-right: 0;
+    }
+    .top-header-country-list img {
+        height: 10px;
+        padding: 0 3px;
+    }
+    .top-header-country-list .sub-menu{
+        width: 718px!important;
+        left: 17px!important;
+    }
+    .top-header-country-list .under-menu > h5 {
+        padding: 6px 0 6px 12px;
+        font-size: 12px;
+    }
+
+
+    header .nav.navbar-nav.navbar-right a {
+        font-size: 12px;
+    }
+    header .main-menu-area .navbar-inverse.affix-top .navbar-brand > img{
+        height: 53px!important;
+        margin-top: 2px;
+    }
+    header .main-menu-area .navbar-inverse.affix .navbar-brand > img {
+        height: 42px !important;
+        margin-top: 3px;
+    }
+    header .main-menu-area .navbar-inverse.affix-top .navbar-nav > li > a {
+        padding:18px 7px;
+    }
+    header .main-menu-area .navbar-inverse.affix .navbar-nav > li > a {
+        padding:10px 7px;
+    }
+    .sub-menu > li > a {
+        font-size: 12px;
+    }
+    header .main-menu-area .navbar-inverse form.navbar-form {
+        /*margin: 0 0 0 5px;*/
+        /*width: 180px;*/
+    }
+    /*-----Slider area-----*/
+    .caption {
+        width: 51%;
+        top: 49%;
+    }
+    .caption h1 {
+        font-size: 30px;
+    }
+    .caption h2{
+        font-size:21px;
+    }
+    .main_slider.owl-carousel.owl-loaded {
+        display: inline-block;
+    }
+    h2.section-title::after {
+        left: 0;
+    }
+    .home-single-strength {
+        margin: 2px;
+    }
+    .home-single-every-block img {
+        height: 120px;
+    }
+    .home-single-every-block h4 {
+        padding: 12px 10px;
+        font-size: 12px;
+    }
+    .section-padding {
+        padding: 51px 0;
+    }
+    .news-area .single-news-img img {
+        height: 150px;
+    }
+    .news-area iframe{
+        width: 100%;
+    }
+    .home-young-part > h3 {
+        font-size: 17px;
+        margin-top: 12px;
+    }
+    .home-young-part img{
+        height:40px;
+    }
+    .home-young-wilat-area{
+        padding:11px 0;
+    }
+    a.cilt-button, .contact-form-area input.cilt-button[type="submit"], .button-hover-active {
+        padding: 8px 13px;
+        font-size: 12px;
+    }
+    h2.section-title{
+        font-size: 23px;
+    }
+    .news-area h3 {
+        font-size: 20px;
+    }
+    .single-news {
+        height: 437px;
+        width: 219px;
+    }
+    .home-membership-box .item {
+        margin: 9px 1px;
+    }
+    .home-membership-box .item > img {
+        padding: 6px;
+    }
+    footer h4.footer-widget-title {
+        font-size: 14px;
+    }
+    footer .footer-widget ul.footer-nav a, footer .footer-widget ul.footer-nav  {
+        line-height: 22px;
+        font-size: 13px;
+    }
+    .footer-middle, .footer-bottom {
+        padding: 45px 0;
+    }
+    .footer-bottom .col-sm-6 {
+        padding-left: 0;
+    }
+    .footer-bottom form button {
+        border-radius: 0;
+        width: 35%;
+        font-size: 14px;
+    }
+    .footer-bottom form {
+        width: 100%;
+    }
+    .footer-bottom form .form-group .form-control, .footer-bottom form button {
+        height: 36px;
+    }
+    .footer-bottom form .form-control {
+        width: 60%;
+        padding:5px;
+    }
+    /*.footer-bottom form button {*/
+        /*width: 31%;*/
+        /*border-radius: 4px;*/
+    /*}*/
+    .footer-bottom .footer-nav > li a img {
+        height: 36px;
+    }
+    .copyright-area p:last-child, .copyright-area p:first-child{
+        float: none;
+        font-size:13px;
+    }
+    .home-membership-area .testi_prev, .home-membership-area .testi_next {
+        top: 74px;
+    }
+    .home-membership-area .testi_next {
+        right: -10px;
+    }
+    .home-membership-area .testi_prev {
+        left: -10px;
+    }
+    .footer-bottom .footer-nav > li a img {
+        margin-right: 0;
+    }
+    .home-about-area {
+        background: rgba(243, 238, 244, 0.6) none no-repeat scroll 0 0;
+        height: 306px;
+    }
+    .home-about-cilt-bd {
+        float: none;
+        margin: 1% 0;
+        width: 100%;
+    }
+    .team-members-area .single-partner {
+        width: 24%;
+    }
+    .about-partner-box{
+        text-align: center;
+    }
+    .what-we-do-wrap .single-ww-do {
+        height: 146px;
+        padding: 5px;
+        width: 23%;
+        font-size: 13px;
+    }
+    .single-ww-do i {
+        margin-bottom: 8px;
+    }
+    .history-wrap > img {
+        height: 244px;;
+    }
+    .entries::before {
+        height: 844px;
+    }
+    .entries .entry .title::before {
+        top: 56%;
+    }
+    .wilat-all-widget .wilat-do-wrap .single-ww-do {
+        height: 341px;
+        margin: 0 0 30px;
+    }
+    .wilat-join-now-area a.cilt-button {
+        margin: 13px 0 0 20px;
+        padding: 13px 37px;
+    }
+    .wilat-strength-quote .who-we-content > p {
+        margin: 21% 0;
+    }
+    .wilat-all-women-list .single-partner {
+        margin: 0 8px 19px;
+        width: 37%;
+    }
+    h2.section-title {
+        font-size: 22px;
+    }
+    .section-banner-area .section-banner-content > h3 {
+        font-size: 23px;
+    }
+    .knowldege-video iframe {
+        height: 244px;
+    }
+    .download-box, .single-course {
+        margin-bottom: 30px;
+    }
+    .download-box > h4
+    /*, .single-course > h4 */
+    {
+        width: 63%;
+    }
+    .course-box {
+        padding: 7px 7px 32px 7px;
+    }
+    .sub-cource-title {
+        font-size: 17px;
+    }
+    .courses-part > img {
+        height: auto;
+    }
+    .news-area h3 {
+        font-size: 18px;
+    }
+    .news-details-area.news-area .single-news-img img {
+        height: auto;
+    }
+    .contact-page-area {
+        padding: 18px 0;
+    }
+    input[type="text"], input[type="email"] {
+        height: 36px;
+    }
+    .contact-part-all {
+        bottom: 3%;
+    }
+    .contact-page-area iframe {
+        margin-bottom: 265px;
+    }
+    .course-box .apply-now {
+        width: 43%;
+    }
+
+}
+
+/*==========================
+For Small Devices
+============================*/
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px){
+    .container {
+        width: 300px;
+    }
+    /*--------Mobile Menu-------*/
+    header.header_section {
+        height: 52px;
+    }
+     .mobile-logo{
+         height: 40px;
+         position: absolute;
+         top: 6px;
+         left: 16px;
+     }
+    /*--------Mobile Menu-------*/
+    .caption {
+        top: 54%;
+    }
+    .caption h1 {
+        font-size: 33px;
+    }
+    .caption h2 {
+        font-size: 21px;
+    }
+    .home-single-strength {
+        width: 16%;
+    }
+    h2.section-title {
+        font-size: 19px;
+    }
+    h2.section-title::after {
+        left: 0;
+        top: 26px;
+    }
+    .yp-regional-man-area h2.section-title::after {
+        left: 17%;
+        top: 46px;
+    }
+    .home-about-area {
+        background: none;
+        height: 438px;
+        padding: 9px 0 40px;
+        background-color: rgba(54,17,99,.8);
+    }
+    .home-about-cilt-bd {
+        float: none;
+        margin: 2% 0;
+        width: 100%;
+    }
+    .home-about-cilt-bd > h3, .home-about-cilt-bd > p{
+        color: #fff;
+    }
+    .home-about-cilt-bd a.cilt-button {
+        border: 1px solid #fff;
+    }
+    .home-single-every-block img {
+        /*height: 204px;*/
+        width: 100%;
+    }
+    .home-single-every-block {
+        margin-bottom: 24px;
+    }
+    .home-young-wilat-area {
+        background-color: rgba(243, 238, 244, 0.6);
+        background-image: none;
+    }
+    .home-young-part {
+        background-color: #b38e5e;
+        padding: 6px 14px 23px;
+        margin-bottom: 20px;
+    }
+    .home-young-part.home-wilat-part{
+        background-color: #361264;
+    }
+    .home-young-part, .home-young-wilat-area .row div:last-child .home-young-part {
+        padding: 25px 20px 25px;
+    }
+    .home-young-wilat-area .row div:last-child .home-young-part{
+        margin-left:0;
+    }
+    .home-young-part > h3 {
+        font-size: 16px;
+    }
+    .home-young-part > img {
+        height: 43px;
+        margin-bottom: 12px;
+    }
+    .section-padding {
+        padding: 62px 0;
+    }
+    .home-membership-box .item {
+        margin: 2px 3px;
+    }
+    .home-membership-box .item > img {
+        padding: 0 2px;
+    }
+    .single-every-part-area {
+        padding-bottom: 20px !important;
+    }
+    .news-area .single-news-img img {
+        height: 171px;
+    }
+    .footer-top-logo > img {
+         height: 77px;
+         margin-bottom: 15px;
+     }
+    .footer-top-logo.text-center.footer-border-bottom.padding-bottom > h3 {
+        font-size: 20px;
+    }
+    .footer-top-logo.text-center.footer-border-bottom.padding-bottom > h4 {
+        font-size: 15px;
+    }
+    footer h4.footer-widget-title {
+        font-size: 15px;
+    }
+    .footer-nav {
+        margin-bottom: 18px;
+    }
+    .footer-bottom .footer-nav li a {
+        margin-right: 3px;
+        padding: 1px 11px;
+    }
+    .footer-bottom .footer-nav > li a img {
+        height: 26px;
+        margin-right: 1px;
+    }
+    .copyright-area p:first-child, .copyright-area p:last-child {
+        float: none;
+        font-size: 13px;
+    }
+    footer.section-padding {
+        padding: 40px 0 40px;
+    }
+    .footer-middle {
+        margin-bottom: 24px;
+        padding: 26px 0;
+    }
+    .footer-bottom{
+        padding:0 0;
+    }
+    .footer-bottom form {
+        width: 100%;
+    }
+    .footer-bottom form .form-control {
+        width: 46%;
+    }
+    .footer-bottom form button {
+        font-size: 14px;
+        width: 43%;
+        height: 36px;
+    }
+    .footer-bottom form .form-group .form-control, .footer-bottom form button {
+        height: 37px;
+    }
+    .footer-bottom .col-sm-6 {
+        padding-left: 0;
+    }
+    .single-news {
+        margin-bottom: 17px;
+        width: auto;
+    }
+    a.cilt-button, .contact-form-area input.cilt-button[type="submit"], .button-hover-active {
+        padding: 9px 15px;
+        font-size: 12px;
+    }
+    .home-membership-area .testi_prev, .home-membership-area .testi_next {
+        top: 6px;
+    }
+    /*About CILT Page*/
+    .what-we-do-wrap .single-ww-do {
+        height: 161px;
+        padding: 19% 2%;
+        width: 100%;
+    }
+    .chairman-message {
+        padding: 17px;
+    }
+    .chairman-message .president-name {
+        padding: 17px 0 0 1px;
+    }
+    .about-partner-box {
+        text-align: center;
+    }
+    .team-members-area .single-partner {
+        width: 100%;
+    }
+    .entries .entry {
+        float: none;
+        width: 100%;
+        padding:18px 7px;
+    }
+    .history-wrap > img {
+        height: 236px;
+        width: 100%;
+    }
+    .entries::before,.entries .entry .title::before{
+        display: none;
+    }
+    .entries {
+        width: 100%;
+    }
+    .entries .entry:not(:first-child) {
+        margin-top: 0;
+    }
+    .entries .entry .title{
+        text-align: center;
+        font-size: 23px;
+    }
+    .entries .entry:nth-child(2n), .entries .entry{
+        text-align: left;
+    }
+    .who-we-content > .who-we-text , .why-join-with-us .who-we-content > .who-we-text{
+        padding: 6% 0;
+    }
+    .section-banner-area .section-banner-content > h3 {
+        font-size: 24px;
+    }
+    .chairman-message p {
+        padding-left: 0;
+        padding-top: 22px;
+        text-align: justify;
+    }
+    .chairman-message p > i {
+        left: 103px;
+        top: 2px;
+    }
+    .signature > img {
+        margin-left: 0;
+    }
+    .about-partner-box .team-contact > span{
+        display: block;
+    }
+    .chairman-img{
+        text-align: center;
+    }
+    .chairman-img > img {
+        height: 268px;
+        width: 100%;
+    }
+    .what-we-do-wrap .single-ww-do {
+        padding: 17% 2%;
+        width: 74%;
+    }
+    .single-ww-do i {
+        margin-bottom: 9px;
+    }
+    ul#myTab li a {
+        font-size: 12px;
+        padding: 12px 3px;
+    }
+    .membership-grades-area .tab-content {
+        height: 383px;
+        padding: 15px 10px;
+    }
+    .membership-fees .columns {
+        float: none;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .m-fees-wrap > h3 {
+        background-color: #361163;
+        box-shadow: 7px 8px 4px rgba(0, 0, 0, 0.74);
+        color: #fff;
+        padding: 10px 8px;
+        text-transform: capitalize;
+    }
+    .membership-grades-area .nav-tabs > li a {
+        height: 54px;
+        line-height: 15px;
+        width: 61px;
+    }
+    .wilat-all-widget .wilat-do-wrap .single-ww-do {
+        height: 390px;
+        margin: 0 0 25px;
+        padding: 7% 5% 1%;
+    }
+    .wilat-all-widget .wilat-do-wrap .single-ww-do p {
+        font-size: 13px;
+    }
+    .wilat-join-now-area a.cilt-button {
+        display: block;
+        margin: 26px auto 0;
+        padding: 17px 5px;
+        width: 73%;
+    }
+    .wilat-all-women-list .single-partner, .yp-regional-man-area .wilat-all-women-list .single-partner {
+         margin: 0 8px 20px;
+         width: 88%;
+     }
+    .corporate-overview-area h2.section-title::after {
+        top: 54px;
+    }
+    .wilat-strength-quote .who-we-content > p {
+        margin: 21% 0 0;
+    }
+    .courses-area .courses-part {
+        background-color:rgba(0, 0, 0, 0.0);
+    }
+    .course-box {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    .knowledge-centre-overview h2.section-title::after {
+        top: 46px;
+}
+    .knowldege-video iframe {
+        width: 100%;
+    }
+    .who-we-content, .knowldege-video, .cilt-knowledge-area .row .col-sm-12:nth-child(even) .who-we-content , .cilt-knowledge-area .row .col-sm-12:nth-child(even) .knowldege-video{
+        float: none;
+        padding-right: 0;
+        padding-left:0;
+        width: 100%;
+    }
+    .download-box, .single-course {
+        margin-bottom: 25px;
+    }
+    .courses-part > img {
+        height: auto;
+    }
+    .courses-part > h3 {
+        font-size: 19px;
+    }
+    .single-course-details-area > h4 {
+        padding: 6px 0;
+        font-size: 16px;
+    }
+    .instructor-area {
+        border-left: 0 none;
+        border-top: 10px solid #fff;
+    }
+    .news-page-area aside {
+        margin-bottom: 29px;
+    }
+    .news-details-area.news-area .single-news-img img {
+        height: auto;
+    }
+    .news-area h3 {
+        font-size: 18px;
+    }
+    .contact-page-area.section-padding {
+        padding: 11px 0;
+    }
+    .contact-page-area iframe {
+        height: 264px;
+        margin-bottom: 25px;
+    }
+    .contact-part-all {
+        position: relative;
+    }
+    .contact-address-area > h3, .contact-form-area > h3 {
+        font-size: 18px;
+        margin-top: 12px;
+    }
+    .contact-address-area h4 {
+        font-size: 16px;
+    }
+    input[type="text"], input[type="email"]{
+        height: 36px;
+    }
+    .contact-part-all {
+         margin-bottom: 25px;
+     }
+    .course-box .apply-now {
+        width: 41%;
+        margin-top: 4px;
+    }
+}
+
+/*==========================
+For large mobile
+============================*/
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 766px) {
+    .container {
+        width: 450px;
+    }
+    .testi_prev, .testi_next {
+        font-size: 28px;
+    }
+    .home-membership-area .testi_prev, .home-membership-area .testi_next {
+        top: 30px;
+    }
+    .single-every-part-area {
+        padding-bottom: 20px !important;
+    }
+    .home-young-part, .home-young-wilat-area .row div:last-child .home-young-part {
+        padding: 25px 20px 25px;
+    }
+    .caption h1 {
+        font-size: 22px;
+    }
+    .caption h2 {
+         font-size: 16px;
+     }
+    .home-about-area {
+        height: 366px;
+    }
+    .chairman-message p {
+        padding-left: 36px;
+    }
+    .chairman-message p > i {
+        left: 0;
+        top:20px;
+    }
+    h2.section-title::after {
+        left: 0;
+    }
+    .signature > img{
+        /*margin-left: 36px;*/
+    }
+    .chairman-img > img {
+        height: 417px;
+        /*width: 100%;*/
+    }
+    .team-members-area .single-partner {
+        width: 30%;
+        margin: 14px 0;
+        padding: 0;
+    }
+    .about-partner-box{
+        text-align: center;
+    }
+    .what-we-do-wrap .single-ww-do {
+        height: 193px;
+        padding: 13% 2%;
+        width: 60%;
+    }
+    .team-contact > h4 {
+        font-size: 13px;
+    }
+    .team-contact > h5 {
+        font-size: 11px;
+    }
+    .team-contact a {
+        font-size: 12px;
+    }
+    .chairman-message > h3 {
+        text-align: center;
+    }
+    .chairman-message p > i {
+        left: 186px;
+        top: -1px;
+    }
+    .wilat-all-widget .wilat-do-wrap .single-ww-do {
+        height: 273px;
+    }
+    .wilat-all-women-list .single-partner, .yp-regional-man-area .wilat-all-women-list .single-partner {
+        width: 61%;
+    }
+    .yp-regional-man-area h2.section-title::after {
+        left: 30%;
+        top: 52px;
+    }
+    .corporate-overview-area h2.section-title::after {
+        top: 30px;
+    }
+    .corporate-strength-quote-area .who-we-content > p {
+        margin: 13% 0 0;
+    }
+    .knowledge-centre-overview h2.section-title::after {
+        top: 55px;
+    }
+    .download-box > h4
+    /*, .single-course > h4 */
+    {
+        width: 55%;
+    }
+    .instructor-name {
+        width: 77%;
+    }
+    .course-box .apply-now {
+        width: 24%;
+    }
+
+}
+/*========================
+For very little mobile
+==========================*/
+@media only screen and (min-width:300px) and (max-width:479px){
+
+    .main-menu-area .nav.navbar-nav.navbar-right a {
+        padding: 10px 0 9px 23px;
+    }
+    .main-menu-area nav.navbar.navbar-inverse.affix-top .navbar-brand > img {
+        height: 40px;
+        margin-top: 4px;
+    }
+    .main-menu-area nav.navbar.navbar-inverse.affix .navbar-brand > img {
+        height: 35px;
+        margin-top: 4px;
+    }
+    .main-menu-area nav.navbar.navbar-inverse.affix-top {
+        padding:10px 8px 8px 8px!important;
+    }
+    .main-menu-area nav.navbar.navbar-inverse.affix {
+        padding: 6px 8px;
+    }
+    .main-menu-area ul li:nth-child(2) .sub-menu {
+        left: 0;
+    }
+    /*===========Slider===========*/
+    .slider_area .item > img {
+        height: 143px;
+        width: 100%;
+    }
+    .caption {
+        padding-top: 20px;
+        width: 64%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .caption h1 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+    .caption h2 {
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .testi_prev, .testi_next {
+        font-size: 24px;
+    }
+    .mainslider_nav {
+        top: calc(50% - 22px);
+    }
+    footer {
+        position: relative;
+    }
+    .footer-widget h4, .footer-widget .address, .footer-widget .copyright-p {
+        width: 100%;
+    }
+    .section-padding {
+        padding: 25px 0;
+    }
+    a.cilt-button, .contact-form-area input.cilt-button[type="submit"], .button-hover-active {
+        font-size: 12px;
+        padding: 7px 8px;
+    }
+    .footer-widget .address {
+        margin: 20px auto 0;
+    }
+    .footer-widget .copyright-p {
+        margin-top: 30px;
+    }
+    .news-area .single-news-img img {
+        height: 160px;
+    }
+    .news-area iframe {
+        width: 100%;
+    }
+    .footer-bottom form .form-control {
+        width: 53%;
+    }
+    .footer-bottom form button {
+        font-size: 14px;
+        width: 44%;
+        height: 37px;
+    }
+    .footer-bottom form .form-group .form-control, .footer-bottom form button {
+        height: 37px;
+    }
+    .footer-bottom .footer-nav > li a img {
+        height: 27px;
+    }
+    #toTop.btn-info {
+        padding: 0 6px;
+    }
+    .home-membership-area .testi_prev, .home-membership-area .testi_next {
+        top: 28px;
+    }
+    .home-membership-area .testi_next {
+        right: -10px;
+    }
+    .home-membership-area .testi_prev {
+        left: -10px;
+    }
+    .home-young-part {
+        /*background-color: #b38e5e;*/
+        padding: 20px 14px 20px;
+        /*margin-bottom: 20px;*/
+    }
+    .home-young-wilat-area .row div:last-child .home-young-part {
+        /*margin-left: 0;*/
+        padding: 14px;
+    }
+    .single-news {
+        width: auto;
+        height:402px;
+    }
+    h2.section-title {
+        font-size: 19px;
+    }
+    h2.section-title::after {
+        left: 0%;
+    }
+    .home-single-every-block h4{
+        font-size: 15px;
+    }
+    .home-about-cilt-bd > h3, .single-news-content h4{
+        font-size: 14px;
+    }
+    .home-about-cilt-bd > p{
+        font-size: 13px;
+    }
+    .home-about-cilt-bd a.cilt-button {
+        font-size: 11px;
+    }
+    .home-about-area {
+        height: 293px;
+    }
+    .corporate-overview-area h2.section-title::after {
+        top: 45px;
+    }
+    .knowledge-centre-overview h2.section-title::after {
+        top: 47px;
+    }
+    .course-box .apply-now {
+        width: 41%;
+        margin-top: 4px;
+    }
+
+    /*Knowledge Video*/
+    .knowldege-video .embed-video a{
+
+        /*border: medium none;*/
+        /*border-radius: 50%;*/
+        /*cursor: pointer;*/
+        /*height: 80px;*/
+        left: 36% !important;
+        /*line-height: 84px;*/
+        /*position: absolute;*/
+        /*text-decoration: none;*/
+        top: 25%!important;
+        /*width: 80px;*/
+    }
+}
+
+/*=======================================================
+For all Small Devices Common CSS Styles
+=========================================================*/
+@media only screen and (min-width:220px) and (max-width:767px) {
+
+    /*==============Index Page Style===============*/
+    /*.main-menu-area .navbar-inverse .navbar-brand {*/
+        /*width: auto;*/
+    /*}*/
+    /*header .navbar-inverse .navbar-toggle .icon-bar {*/
+        /*background-color: #0083cb;*/
+    /*}*/
+    /*.main-menu-area nav.navbar.navbar-inverse.affix-top {*/
+        /*padding: 10px 8px 8px 8px !important;*/
+    /*}*/
+
+    /*.main-menu-area nav.navbar.navbar-inverse.affix {*/
+        /*padding: 6px 8px !important;*/
+    /*}*/
+    /*.main-menu-area .navbar-inverse ul.navbar-left > li:first-child a {*/
+        /*margin: 0 5px;*/
+    /*}*/
+}
